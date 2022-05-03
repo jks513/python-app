@@ -1,8 +1,8 @@
 # TODO:  set base image as ubuntu version 18.04
-
+FROM ubuntu: 18.04
 
 # TODO:  set maintainer as your pair names
-
+MAINTAINER Sonia and Kabir
 
 RUN apt-get update -y && \
     apt-get install -y \
@@ -21,4 +21,4 @@ COPY . /app
 ENTRYPOINT [ "python3" ]
 
 # TODO: set the command parameter to the app.py file
-
+CMD ["python","app.py"]
